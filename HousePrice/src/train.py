@@ -34,7 +34,7 @@ learning_rate = 1e-3
 optim = optim.Adam(model.parameters(), lr=learning_rate)
 
 step = 0
-right_num = 0
+right_num = 0.
 for epoch in range(1, EPOCHS+1):
 
     print(f'================第{epoch}轮================')
