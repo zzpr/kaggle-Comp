@@ -9,7 +9,8 @@ class haonet(nn.Module):
     def __init__(self):
         super(haonet, self).__init__()
         self.module = nn.Sequential(
-            nn.Linear(331, 1)
+            nn.Linear(331, 128),
+            nn.Linear(128, 1)
         )
 
     def forward(self, input):
@@ -17,4 +18,5 @@ class haonet(nn.Module):
         return output
 
 if __name__ == '__main__':
-    pass
+    model = haonet()
+    print(model)
